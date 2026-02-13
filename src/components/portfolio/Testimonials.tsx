@@ -38,7 +38,6 @@
            transition={{ duration: 0.7 }}
            className="text-center mb-16"
          >
-           <span className="text-sm font-mono text-primary mb-4 block">// TESTIMONIALS</span>
            <h2 className="text-3xl md:text-5xl font-bold mb-6">
              What Clients <span className="gradient-text">Say</span>
            </h2>

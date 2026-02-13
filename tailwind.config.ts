@@ -138,7 +138,7 @@ export default {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "hero-gradient": "linear-gradient(135deg, hsl(var(--primary) / 0.1) 0%, transparent 50%, hsl(var(--accent) / 0.1) 100%)",
+        "hero-gradient": "linear-gradient(135deg, hsl(var(--primary) / 0.08) 0%, transparent 40%, hsl(var(--secondary) / 0.08) 100%)",
       },
     },
   },

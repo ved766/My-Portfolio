@@ -43,9 +43,8 @@
            initial={{ opacity: 0, y: 40 }}
            animate={isInView ? { opacity: 1, y: 0 } : {}}
            transition={{ duration: 0.7 }}
-           className="text-center mb-16"
+           className="text-center mb-10"
          >
-           <span className="text-sm font-mono text-primary mb-4 block">// SERVICES</span>
            <h2 className="text-3xl md:text-5xl font-bold mb-6">
              How I Can <span className="gradient-text">Help You</span>
            </h2>
@@ -62,23 +61,23 @@
                initial={{ opacity: 0, y: 30 }}
                animate={isInView ? { opacity: 1, y: 0 } : {}}
                transition={{ delay: index * 0.15, duration: 0.6 }}
-               whileHover={{ y: -5 }}
-               className="group p-6 md:p-8 rounded-2xl glass hover:border-primary/30 transition-all cursor-default"
+               whileHover={{ y: -6 }}
+               className="group p-7 md:p-8 rounded-xl glass hover:glass-strong hover:border-primary/40 transition-all duration-300 cursor-default border-white/15"
              >
-               <div className="flex items-start gap-4 mb-6">
-                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                   <service.icon className="w-7 h-7 text-primary" />
+               <div className="flex items-start gap-5 mb-6">
+                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/15 to-secondary/10 flex items-center justify-center group-hover:from-primary/25 group-hover:to-secondary/20 transition-all duration-300 flex-shrink-0">
+                   <service.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                  </div>
                  <div>
-                   <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                   <p className="text-muted-foreground text-sm">{service.description}</p>
+                   <h3 className="text-lg font-bold mb-1 text-foreground">{service.title}</h3>
+                   <p className="text-foreground/65 text-sm leading-relaxed">{service.description}</p>
                  </div>
                </div>
                
-               <ul className="space-y-2 mb-6">
+               <ul className="space-y-2.5 mb-6">
                  {service.features.map((feature) => (
-                   <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
-                     <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                   <li key={feature} className="flex items-center gap-2.5 text-sm text-foreground/70">
+                     <span className="w-1 h-1 rounded-full bg-primary flex-shrink-0 mt-1" />
                      {feature}
                    </li>
                  ))}

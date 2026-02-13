@@ -21,18 +21,16 @@
      skills: [
        { name: 'React.js', level: 88 },
        { name: 'TypeScript', level: 85 },
+       { name: 'JavaScript', level: 85 },
        { name: 'Tailwind CSS', level: 92 },
-       { name: 'Next.js', level: 75 },
+// { name: 'Next.js', level: 75 },
      ],
    },
    {
      title: 'Cloud & DevOps',
      color: 'success',
      skills: [
-       { name: 'AWS EC2', level: 82 },
-       { name: 'AWS S3', level: 85 },
-       { name: 'Docker', level: 75 },
-       { name: 'CI/CD', level: 70 },
+      { name: 'AWS S3', level: 85 },
      ],
    },
    {
@@ -40,7 +38,7 @@
      color: 'primary',
      skills: [
        { name: 'MongoDB', level: 90 },
-       { name: 'PostgreSQL', level: 78 },
+  //     { name: 'PostgreSQL', level: 78 },
        { name: 'Git', level: 92 },
        { name: 'Postman', level: 95 },
      ],
@@ -60,9 +58,8 @@
            initial={{ opacity: 0, y: 40 }}
            animate={isInView ? { opacity: 1, y: 0 } : {}}
            transition={{ duration: 0.7 }}
-           className="text-center mb-16"
+           className="text-center mb-10"
          >
-           <span className="text-sm font-mono text-primary mb-4 block">// TECH STACK</span>
            <h2 className="text-3xl md:text-5xl font-bold mb-6">
              Skills & <span className="gradient-text">Technologies</span>
            </h2>

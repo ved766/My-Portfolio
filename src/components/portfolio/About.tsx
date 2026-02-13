@@ -39,16 +39,15 @@
            initial={{ opacity: 0, y: 40 }}
            animate={isInView ? { opacity: 1, y: 0 } : {}}
            transition={{ duration: 0.7 }}
-           className="text-center mb-16"
+           className="text-center mb-10"
          >
-           <span className="text-sm font-mono text-primary mb-4 block">// ABOUT ME</span>
            <h2 className="text-3xl md:text-5xl font-bold mb-6">
              Backend Specialist with a{' '}
              <span className="gradient-text">Startup Mindset</span>
            </h2>
          </motion.div>
  
-         <div className="grid lg:grid-cols-2 gap-12 items-center">
+         <div className="grid lg:grid-cols-2 gap-8 items-center">
            {/* Left Content */}
            <motion.div
              initial={{ opacity: 0, x: -30 }}
@@ -75,8 +74,8 @@
              {/* Stats */}
              <div className="grid grid-cols-3 gap-4 pt-6">
                {[
-                 { value: '10+', label: 'Projects' },
-                 { value: '1+', label: 'Year Exp' },
+                 { value: '2+', label: 'Projects' },
+                 { value: '6+', label: 'Months Exp' },
                  { value: '100%', label: 'Dedication' },
                ].map((stat, index) => (
                  <motion.div
@@ -106,14 +105,14 @@
                  initial={{ opacity: 0, y: 20 }}
                  animate={isInView ? { opacity: 1, y: 0 } : {}}
                  transition={{ delay: 0.4 + index * 0.1 }}
-                 whileHover={{ y: -5, scale: 1.02 }}
-                 className="p-6 rounded-xl glass hover:border-primary/30 transition-all group cursor-default"
+                 whileHover={{ y: -6, scale: 1.02 }}
+                 className="p-6 rounded-xl glass hover:glass-strong hover:border-primary/35 transition-all duration-300 group cursor-default"
                >
-                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                   <item.icon className="w-6 h-6 text-primary" />
+                 <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-primary/15 to-secondary/10 flex items-center justify-center mb-4 group-hover:from-primary/25 group-hover:to-secondary/20 transition-all duration-300">
+                   <item.icon className="w-5.5 h-5.5 text-primary group-hover:scale-110 transition-transform duration-300" />
                  </div>
-                 <h3 className="font-semibold mb-2">{item.title}</h3>
-                 <p className="text-sm text-muted-foreground">{item.description}</p>
+                 <h3 className="font-bold mb-2 text-foreground text-sm">{item.title}</h3>
+                 <p className="text-sm text-foreground/65 leading-relaxed">{item.description}</p>
                </motion.div>
              ))}
            </motion.div>

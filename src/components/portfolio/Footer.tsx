@@ -62,14 +62,14 @@
                >
                  <Github className="w-5 h-5" />
                </a>
-               <a
-                 href="https://linkedin.com/in/vedantpalekar"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="p-2 rounded-lg hover:bg-secondary transition-colors"
-               >
-                 <Linkedin className="w-5 h-5" />
-               </a>
+              <a
+                href="https://www.linkedin.com/in/vedant-palekar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-lg hover:bg-secondary transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
                <a
                  href="mailto:vedant@example.com"
                  className="p-2 rounded-lg hover:bg-secondary transition-colors"

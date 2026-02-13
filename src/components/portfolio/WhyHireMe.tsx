@@ -44,14 +44,13 @@
        <div className="absolute inset-0 bg-grid opacity-20" />
        
        <div ref={ref} className="container-narrow relative z-10">
-         <div className="grid lg:grid-cols-2 gap-12 items-center">
+         <div className="grid lg:grid-cols-2 gap-8 items-center">
            {/* Left Content */}
            <motion.div
              initial={{ opacity: 0, x: -30 }}
              animate={isInView ? { opacity: 1, x: 0 } : {}}
              transition={{ duration: 0.7 }}
            >
-             <span className="text-sm font-mono text-primary mb-4 block">// WHY WORK WITH ME</span>
              <h2 className="text-3xl md:text-5xl font-bold mb-6">
                Your Project in{' '}
                <span className="gradient-text">Expert Hands</span>
